@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto3.Views.EditarLugar">
+    <ContentPage.Content>
+        <StackLayout Margin="20,5,20,0">
+            <Label Text="Editar Recibo" FontSize="Large" HorizontalOptions="Center" Margin="0,20" />
+            <Label Text="Descripcion"/>
+            <Entry x:Name="txtDescripcion" />
+            <Label Text="Monto"/>
+            <Entry x:Name="txtMonto" />
+            <Label Text="Fecha"/>
+            <Entry x:Name="txtFecha" />
+            <Button Text="Editar" 
+                    x:Name="SaveBtn" 
+                    Margin="20,20,20,0" 
+                    Clicked="SaveBtn_Clicked" 
+                    BackgroundColor="#33BD4F"
+                    CornerRadius="10" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
